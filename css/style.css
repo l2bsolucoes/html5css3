@@ -1,0 +1,35 @@
+/*
+    Folha de estilo do site One page HTML5 e CSS3
+    @author Leslie Bagalho
+*/
+
+/* Smartphone Portrait*/
+
+/*Smartphone landscape*/
+@media(min-width: 576px){
+    body{
+        background-color: gray;
+    }
+}
+
+/*Tablet Portrait*/
+@media(min-width: 768px){
+    body{
+        background-color: yellowgreen;
+    }
+}
+
+/*Tablet Landscape*/
+@media(min-width: 992px){
+    body{
+        background-color: orange;
+    }
+}
+
+/*PC*/
+@media(min-width: 1200px){
+    body{
+        background-color: burlywood;
+    }
+}
+
