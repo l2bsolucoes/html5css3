@@ -3,6 +3,26 @@
     @author Leslie Bagalho
 */
 
+/*Importação do Google Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em; /* 1em equivale a 16px*/
+}
+
+/*CSS Reset*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/*Layout*/
+.container{
+    margin: 0 auto;
+    background-color: yellowgreen;
+}
+
 /* Smartphone Portrait*/
 
 /*Smartphone landscape*/
@@ -10,26 +30,42 @@
     body{
         background-color: gray;
     }
+    /* Layout */
+    .container{
+        max-width: 540px;
+    }
 }
 
-/*Tablet Portrait*/
+/* Tablet Portrait */
 @media(min-width: 768px){
     body{
         background-color: yellowgreen;
     }
-}
-
-/*Tablet Landscape*/
-@media(min-width: 992px){
-    body{
-        background-color: orange;
+    /* Layout */
+    .container{
+        max-width: 720px;
     }
 }
 
-/*PC*/
+/* Tablet Landscape */
+@media(min-width: 992px){
+    body{
+        background-color: rgb(89, 89, 97);
+    }
+    /* Layout */
+    .container{
+        max-width: 960px;
+    }
+}
+
+/* PC e Notebook */
 @media(min-width: 1200px){
     body{
         background-color: burlywood;
+    }
+    /* Layout */
+    .container{
+        max-width: 1140px;
     }
 }
 
