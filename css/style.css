@@ -23,6 +23,12 @@ body{
     background-color: #dcdcdc;
 }
 
+.flex{
+    display: flex;
+    justify-content: space-between;
+    background-color: #a9a9a9;
+}
+
 /* Topo do site */
 #topo{
     position: fixed;
@@ -31,6 +37,18 @@ body{
 }
 
 /* Smartphone Portrait*/
+
+/* Cabeçalho */
+header{
+    height: 60px;
+}
+
+.logo img{
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
 /*Smartphone landscape*/
 @media(min-width: 576px){
@@ -51,6 +69,15 @@ body{
     /* Layout */
     .container{
         max-width: 720px;
+    }
+    /* Cabeçalho */
+    header{
+        height: 80px;
+    }
+
+    .logo img{
+        width: 120px;
+        height: 60px;
     }
 }
 
@@ -73,6 +100,15 @@ body{
     /* Layout */
     .container{
         max-width: 1140px;
+    }
+    /* Cabeçalho */
+    header{
+        height: 120px;
+    }
+
+    .loo img{
+        width: 110px;
+        height: 55px;
     }
 }
 
