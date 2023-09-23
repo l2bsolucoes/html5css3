@@ -37,6 +37,12 @@ body{
     flex-direction: column;
 }
 
+.flex4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .botao{
     text-decoration: none;
     color: #fff;
@@ -53,6 +59,36 @@ body{
     position: fixed;
     right: 10px;
     bottom: 10px;
+}
+
+/* Cartões */
+.card{
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3{
+    margin-top: 15px;
+}
+
+.card p{
+    text-align: left;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.card a{
+    padding: 10px 100px;
+    border: 0;
 }
 
 /* Smartphone Portrait*/
@@ -75,7 +111,6 @@ header{
 
 label{
     font-size: 3em;
-    position: fixed;
     top: 5px;
     right: 15px;
     color: rgba(0,0,0,0.5);
@@ -109,7 +144,7 @@ nav ul li a{
 /* Destaque */
 main{
     height: 75vh;
-    background: url(/img/banner.jpg);
+    background: url(../img/banner.jpg) repeat-x bottom;
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -131,7 +166,7 @@ main h2{
 /* Sobre */
 #sobre{
     padding: 50px 0px;
-    background: url(/img/background.png);
+    background: url(../img/background.png) repeat-x bottom;
     background-size: cover;
     background-position: center;
 }
@@ -173,6 +208,57 @@ main h2{
     width: 340px;
     height: 191px;
     border: 0;
+}
+
+/* Wireframe*/
+#wireframe{
+    padding: 50px 0px;
+    background: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#textowire{
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textowire h2{
+    margin-bottom: 10px;
+}
+
+#textowire p{
+    margin-bottom: 40px;
+}
+
+#textowire span{
+    display: none;
+}
+
+#qrcode{
+    display: none;
+}
+
+/* Conteudo */
+#conteudo{
+    padding: 50px 0px;
+}
+
+#conteudo h2{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#todos{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#todos a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.25em;
 }
 
 /* Smartphone landscape */
@@ -289,5 +375,23 @@ main h2{
         flex-direction: row;
         align-items: center;
     }
-}
 
+    /* Wireframe */
+    #wireframe{
+        background-attachment: fixed;
+    }
+
+    #wireframe span{
+        display: inline;
+        color: #c00000;
+    }
+
+    #qrcode{
+        display: inline;
+    }
+
+    #qrcode img{
+        width: 225px;
+        height: 225px;
+    }
+}
